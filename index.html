@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">BlackJack Game</h1>
+        <p class="lead start toggle">Press Start Game To Play.</p>
+        <button type="button" class="btn btn-primary start" onclick="startNewHand()">Start Game</button>
+      </div>
+    </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg">
+      <div id="dealer" class="cards">
+        <p class="startgame">Dealers Hand: <span id="dealerHand"></span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg">
+      <div id="hand" class="cards">
+        <p class="startgame">Players Hand: <span id="playerHand"></span> </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="buttons">
+  <button id="button1" type="button" class="btn btn-primary hidebutton" onclick="hit()">Hit!</button>
+  <button id="button2" type="button" class="btn btn-primary hidebutton" onclick="stand(dealerHand, dealerSecondCard)">Stand!</button>
+
+</div>
+
+<div class="container2">
+  <div class="row">
+    <div class="col-sm-4" id="balance">
+
+    </div>
+    <div class="col-sm-4" id="result"">
+
+    </div>
+    <div class="col-sm-4" id="bet">
+
+    </div>
+  </div>
+</div>
+
+
+<script src="index.js" charset="utf-8"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+  </body>
+</html>

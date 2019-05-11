@@ -1,0 +1,72 @@
+body {
+  background-color: #6f6f6f;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.visible {
+  height: 10%;
+  width: 10%;
+
+}
+
+#hand {
+  height: auto;
+}
+
+.container {
+  text-align: center;
+}
+
+.hidebutton {
+  visibility: hidden;
+  font-size: 0px;
+
+}
+
+
+.btn{
+  margin: 10px;
+
+
+}
+
+.cards {
+  padding: 30px;
+}
+
+.startgame{
+  font-size: 0;
+}
+
+.result{
+
+  font-weight: bold;
+}
+
+.jumbotron{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.buttons {
+  text-align: center;
+}
+.output{
+  position: absolute;
+  right: auto;
+  left: auto;
+  width: 100%;
+}
+
+
+.container2{
+  font-size: 2rem;
+  position: fixed;
+  bottom: 0;
+  left: auto;
+  right: auto;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 25px;
+}
