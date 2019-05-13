@@ -67,7 +67,7 @@ body {
 
 .container2{
   font-size: 2rem;
-  position: fixed;
+  
   bottom: 0;
   left: auto;
   right: auto;
@@ -75,5 +75,6 @@ body {
   text-align: center;
   margin-bottom: 0;
   font-size: 25px;
+  margin-top: 58px;
   z-index: 0;
 }
