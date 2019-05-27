@@ -6,7 +6,6 @@ body {
 .visible {
   height: 10%;
   width: 10%;
-
 }
 
 #hand {
@@ -17,33 +16,30 @@ body {
   text-align: center;
 }
 
+
+
 .hidebutton {
   visibility: hidden;
   font-size: 0px;
-
 }
 
-
-.btn{
+.btn {
   margin: 10px;
-
-
 }
 
 .cards {
   padding: 30px;
 }
 
-.startgame{
+.startgame {
   font-size: 0;
 }
 
-.result{
-
+.result {
   font-weight: bold;
 }
 
-.jumbotron{
+.jumbotron {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -55,19 +51,17 @@ body {
   right: auto;
   left: auto;
   z-index: 1;
-
 }
-.output{
+
+.output {
   position: absolute;
   right: auto;
   left: auto;
   width: 100%;
 }
 
-
-.container2{
+.container2 {
   font-size: 2rem;
-  
   bottom: 0;
   left: auto;
   right: auto;
@@ -77,4 +71,24 @@ body {
   font-size: 25px;
   margin-top: 58px;
   z-index: 0;
+}
+
+.btn-circle {
+
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
 }
