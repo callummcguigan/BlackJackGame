@@ -67,7 +67,7 @@ function startNewHand(){
   balance = balance - bet;
 
   document.getElementById("balance").innerHTML = '<span><button id="button3" type="button" class="btn btn-primary hidebutton" onclick="addFunds()">Add Funds</button></span> Current Balance: ' + balance;
-  document.getElementById("bet").innerHTML = "Bet per Hand: " + bet;
+  document.getElementById("bet").innerHTML = "Bet per Hand: " + bet + '<button type="button" class="btn btn-dark btn-circle" onclick="increase()">+</button> <button type="button" class="btn btn-dark btn-circle" onclick="decrease()">-</button>';
   document.getElementById("result").innerHTML = "";
   $(".startgame").removeClass("startgame");
   document.getElementById("button3").disabled = true;
@@ -120,6 +120,7 @@ function startNewHand(){
 
   alert("no money!");
   document.getElementById("button3").disabled = false;
+  document.getElementById("button3").classList.Remove("colour");
   }
 
 function hit(){
@@ -315,5 +316,21 @@ function displayResult(x){
 function addFunds(){
   balance = origbalance;
   startNewHand();
-  alert("Added Original Balance");
+  alert("Added Original Balance: " + origbalance);
+}
+
+function increase(){
+  if (balance >= (bet + 10)) {
+    bet = bet + 10;
+    document.getElementById("bet").innerHTML = "Bet per Hand: " + bet + '<button type="button" class="btn btn-dark btn-circle" onclick="increase()">+</button> <button type="button" class="btn btn-dark btn-circle" onclick="decrease()">-</button>';
+  }
+
+}
+function decrease(){
+  if (bet != 0) {
+    bet = bet - 10;
+    document.getElementById("bet").innerHTML = "Bet per Hand: " + bet + '<button type="button" class="btn btn-dark btn-circle" onclick="increase()">+</button> <button type="button" class="btn btn-dark btn-circle" onclick="decrease()">-</button>';
+  }
+
+
 }
